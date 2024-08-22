@@ -1,4 +1,4 @@
-# RNMeshGradient
+# rn-mesh-gradient
 
 React Native Mesh Gradient
 
@@ -21,16 +21,16 @@ yarn add RNMeshGradient
 ## Usage
 
 ```js
-import { MeshGradient } from 'RNMeshGradient'
+import { MeshGradient } from 'rn-mesh-gradient'
 
 <MeshGradient
   style={{ flex: 1 }}
-	colors={[
+  colors={[
     '#ff0000', '#dd8015',
     '#15cce4', '#e6d10f'
   ]}
-	frequency={5}
-	// iOS only
+  frequency={5}
+  // iOS only
   points={[
     [0.0, 0.0], [1.0, 0.0],
     [0.0, 1.0], [1.0, 1.0]
