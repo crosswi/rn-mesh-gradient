@@ -1,6 +1,6 @@
 {
 	"name": "rn-mesh-gradient",
-	"version": "1.0.4",
+	"version": "1.0.7",
 	"description": "React Native Mesh Gradient",
 	"license": "MIT",
 	"author": "Cameron Cross",
@@ -20,13 +20,12 @@
 	],
 	"peerDependencies": {
 		"react": ">=18.0.0",
-		"react-native": ">=0.69.0"
+		"react-native": ">=0.71.0"
 	},
-	"files": [
-		"ios",
-		"android",
-		"js",
-		"index.ts"
-	],
+	"codegenConfig": {
+		"name": "ReactNativeMeshGradient",
+		"type": "modules",
+		"jsSrcsDir": "js"
+	},
 	"main": "index.ts"
 }
