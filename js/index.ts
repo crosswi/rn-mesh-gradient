@@ -13,7 +13,7 @@ type Props = {
 /**
  * Basic usage of the MeshGradient component
  * @example
- * import { MeshGradient } from 'RNMeshGradient'
+ * import { MeshGradient } from 'rn-mesh-gradient'
  *
  * <MeshGradient
  *   style={{ flex: 1 }}
