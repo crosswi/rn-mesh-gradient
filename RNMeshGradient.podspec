@@ -14,7 +14,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => package["repository"]["url"], :tag => "#{s.version}" }
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-	s.dependency "React-Core"
-  s.dependency "React/RCTBridgeModule"
-	s.dependency "React/RCTViewManager"
+	install_modules_dependencies(s)
 end

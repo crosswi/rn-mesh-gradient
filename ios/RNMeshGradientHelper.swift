@@ -25,7 +25,7 @@ func getColors (hexArray: NSArray) throws -> Array<Color> {
     var colors: Array<Color> = []
     
     for hex in hexArray {
-        guard let hex = hex as NSString {
+        if let hex = hex as? NSString {
             let rgba = convertHexToRgba(hex: hex as NSString)
             colors.append(Color(red: rgba.red, green: rgba.green, blue: rgba.blue, opacity: rgba.opacity))
         } else {

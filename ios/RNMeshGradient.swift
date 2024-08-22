@@ -22,7 +22,7 @@ struct MeshGradientView: View {
 					smoothsColors: true
 				).onAppear{
 					if (options.points.count > 0) {
-						elementsInRow = Int(sqrt(Double(options.points.count)))
+						dimension = Int(sqrt(Double(options.points.count)))
 					}
 					
 					if (options.animatedColors.count > 0 && options.frequency != nil) {
