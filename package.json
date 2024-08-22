@@ -1,0 +1,30 @@
+{
+  "name": "RNMeshGradient",
+  "version": "1.0.0",
+  "description": "React Native Mesh Gradient",
+  "license": "MIT",
+  "author": "Cameron Cross",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crosswi/RNMeshGradient"
+  },
+  "keywords": [
+    "RN",
+    "react",
+    "native",
+    "mesh",
+    "gradient",
+    "react-native",
+    "mesh-gradient"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.69.0"
+  },
+  "files": [
+    "ios",
+    "android",
+    "index.ts"
+  ],
+  "main": "index.ts"
+}
