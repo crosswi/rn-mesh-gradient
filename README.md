@@ -25,12 +25,12 @@ import { MeshGradient } from 'RNMeshGradient'
 
 <MeshGradient
   style={{ flex: 1 }}
-	colors={[
+  colors={[
     '#ff0000', '#dd8015',
     '#15cce4', '#e6d10f'
   ]}
-	frequency={5}
-	// iOS only
+  frequency={5}
+  // iOS only
   points={[
     [0.0, 0.0], [1.0, 0.0],
     [0.0, 1.0], [1.0, 1.0]
