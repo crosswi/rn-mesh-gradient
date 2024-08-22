@@ -1,4 +1,4 @@
-# RNMeshGradient
+# rn-mesh-gradient
 
 React Native Mesh Gradient
 
@@ -21,7 +21,7 @@ yarn add RNMeshGradient
 ## Usage
 
 ```js
-import { MeshGradient } from 'RNMeshGradient'
+import { MeshGradient } from 'rn-mesh-gradient'
 
 <MeshGradient
   style={{ flex: 1 }}
