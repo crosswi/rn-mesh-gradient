@@ -6,6 +6,12 @@
 
 `rn-mesh-gradient` is a versatile and customizable mesh gradient component for React Native. It provides stunning gradient effects and is compatible with both iOS (version 18.0 and above) and Android platforms.
 
+| Platform        | Status                |
+|-----------------|-----------------------|
+| iOS 18.0+       | ✅ Supported           |
+| Android         | ✅ Supported           |
+| iOS < 18.0      | ❌ Not Supported       |
+
 ## Features
 
 - **Cross-Platform Support:** Available for both iOS (version 18.0+) and Android.
@@ -70,17 +76,13 @@ export default App;
 
 # Props
 
-	•	style (ViewStyle): Custom styles for the component.
-	•	colors (Array<string>): Array of color codes for the static gradient.
-	•	animatedColors (Array<string>): Array of color codes for the animated gradient (iOS only).
-	•	points (Array<[number, number]>): Array of points defining the gradient mesh (iOS only).
-	•	frequency (number): Controls the frequency of the animation cycle (if animatedColors is used).
-
-# Compatibility
-
-	•	✅ iOS 18.0 and above
-	•	✅ Android
-	•	❌ iOS versions below 18.0
+| Prop             | Type                         | Description                                                        |
+|------------------|------------------------------|--------------------------------------------------------------------|
+| `style`          | `ViewStyle`                  | Custom styles for the component.                                  |
+| `colors`         | `Array<string>`              | Array of color codes for the static gradient.                     |
+| `animatedColors` | `Array<string>`              | Array of color codes for the animated gradient (iOS only).         |
+| `points`         | `Array<[number, number]>`    | Array of points defining the gradient mesh (iOS only).             |
+| `frequency`      | `number`                     | Controls the frequency of the animation cycle (if `animatedColors` is used). |
 
 # Contributing
 
