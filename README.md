@@ -1,21 +1,21 @@
 # rn-mesh-gradient
 
-React Native Mesh Gradient
+![giphy](https://github.com/user-attachments/assets/e1813103-e237-4e31-8a18-88d8d129b4c6)
 
-## Requirements
+## Description
 
-Mesh Gradient works for: 
-- iOS 18 or higher.
-- Android
+A mesh gradient component built in react-native
 
-## Preview
-
-https://github.com/user-attachments/assets/cff00e3d-200f-47b6-b530-e4a856589e31
+Compatible with: 
+- ✅ iOS >= 18.0
+- ✅ Android
+- ❌ iOS < 18.0
 
 ## Installation
 
 ```sh
-yarn add RNMeshGradient
+# npm i rn-mesh-gradient
+yarn add rn-mesh-gradient
 ```
 
 ## Usage
