@@ -1,43 +1,95 @@
-# rn-mesh-gradient
+# `rn-mesh-gradient`
 
-![giphy](https://github.com/user-attachments/assets/e1813103-e237-4e31-8a18-88d8d129b4c6)
+![Mesh Gradient](https://github.com/user-attachments/assets/e1813103-e237-4e31-8a18-88d8d129b4c6)
 
-## Description
+## Overview
 
-A mesh gradient component built in react-native
+`rn-mesh-gradient` is a versatile and customizable mesh gradient component for React Native. It provides stunning gradient effects and is compatible with both iOS (version 18.0 and above) and Android platforms.
 
-Compatible with: 
-- ✅ iOS >= 18.0
-- ✅ Android
-- ❌ iOS < 18.0
+## Features
+
+- **Cross-Platform Support:** Available for both iOS (version 18.0+) and Android.
+- **Dynamic Gradient Colors:** Supports both static and animated gradients.
+- **Flexible Configuration:** Easily customize gradient points and colors.
 
 ## Installation
 
+You can install the package via npm or yarn:
+
 ```sh
-# npm i rn-mesh-gradient
+# Using npm
+npm install rn-mesh-gradient
+
+# Using yarn
 yarn add rn-mesh-gradient
 ```
 
-## Usage
+# Usage
 
-```js
-import { MeshGradient } from 'rn-mesh-gradient'
-
-<MeshGradient
-  style={{ flex: 1 }}
-  colors={[
-    '#ff0000', '#dd8015',
-    '#15cce4', '#e6d10f'
-  ]}
-  frequency={5}
-  // iOS only
-  points={[
-    [0.0, 0.0], [1.0, 0.0],
-    [0.0, 1.0], [1.0, 1.0]
-  ]}
-  animatedColors={[
-    '#15cce4', '#0000ff',
-    '#ff0000', '#dd8015'
-  ]}
-/>
+Here’s a basic example of how to use the MeshGradient component:
 ```
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { MeshGradient } from 'rn-mesh-gradient';
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <MeshGradient
+        style={styles.gradient}
+        colors={[
+          '#ff0000', '#dd8015',
+          '#15cce4', '#e6d10f'
+        ]}
+        frequency={5}
+        // iOS only
+        points={[
+          [0.0, 0.0], [1.0, 0.0],
+          [0.0, 1.0], [1.0, 1.0]
+        ]}
+        animatedColors={[
+          '#15cce4', '#0000ff',
+          '#ff0000', '#dd8015'
+        ]}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  gradient: {
+    flex: 1,
+  },
+});
+
+export default App;
+```
+
+# Props
+
+	•	style (ViewStyle): Custom styles for the component.
+	•	colors (Array<string>): Array of color codes for the static gradient.
+	•	animatedColors (Array<string>): Array of color codes for the animated gradient (iOS only).
+	•	points (Array<[number, number]>): Array of points defining the gradient mesh (iOS only).
+	•	frequency (number): Controls the frequency of the animation cycle (if animatedColors is used).
+
+# Compatibility
+
+	•	✅ iOS 18.0 and above
+	•	✅ Android
+	•	❌ iOS versions below 18.0
+
+# Contributing
+
+I welcome contributions to improve rn-mesh-gradient. Please refer to our Contributing Guidelines for more details.
+
+# License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+# Contact
+
+For any questions or feedback, please contact me (camcross11@gmail.com) or open an issue on our GitHub repository.
